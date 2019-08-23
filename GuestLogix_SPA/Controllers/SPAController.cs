@@ -16,8 +16,9 @@ namespace GuestLogix_SPA.Controllers
         public string Get(string origin,string destination)
         {
             SPAAlgorithm spaAlgo = new SPAAlgorithm();
+
             string path = spaAlgo.FindShortestPath(origin, destination);
-            
+
             return path;
         }
     }
